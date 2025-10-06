@@ -1,0 +1,107 @@
+# -----------------------------
+# GENEL / OS / EDITÖR
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# IDE / Proje dosyaları
+.idea/
+.vscode/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# -----------------------------
+# FLUTTER / DART (frontend)
+# (Repo içinde herhangi bir dizinde olabilir)
+# -----------------------------
+**/.dart_tool/
+**/.packages
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.metadata
+**/build/
+**/.pub-cache/
+**/pub-cache/
+
+# Android tarafı (Flutter)
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/android/app/*.keystore
+**/android/app/*.jks
+**/android/captures/
+**/android/.cxx/
+
+# iOS / macOS tarafı (Flutter)
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Podfile.lock # (İstersen commit etmek isteyebilirsin; ekibe göre değişir)
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+**/macos/.symlinks/
+**/macos/Podfile.lock # (isteğe bağlı)
+
+# Web (Flutter)
+# (Derleme çıktıları zaten build/ altında)
+
+# Coverage (Flutter)
+**/coverage/
+
+# NOT: Flutter uygulamalarında pubspec.lock genelde COMMIT edilir.
+# Paket (package) geliştiriyorsan etmeyebilirsin. Global olarak ignore etmiyoruz.
+
+# -----------------------------
+# .NET / ASP.NET Core (backend)
+# -----------------------------
+**/bin/
+**/obj/
+**/out/
+**/artifacts/
+**/.vs/
+**/TestResults/
+**/TestResult*/
+**/packages/        # Eski NuGet paket klasörü (paketler artık global cache'de)
+
+# Kullanıcı-secrets ve local config
+# (appsettings.json commit edilir; Local/Development gizli varyantları ignore edilebilir)
+appsettings.*.Local.json
+appsettings.*.local.json
+secrets.json
+
+# EF Migrations snapshot'ları genelde commit edilir; o yüzden ignore etmiyoruz.
+
+# -----------------------------
+# ORTAM / GİZLİ DOSYALAR
+# -----------------------------
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.p12
+
+# -----------------------------
+# DİĞER ARAÇLAR
+# -----------------------------
+# Docker yerel override'ları
+docker-compose.override.yml
+
+# Yarn/NPM (Flutter web tarafında kullanıyorsan)
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Paket yöneticisi kilitleri (isteğe bağlı ekibine göre)
+# package-lock.json
+# yarn.lock
